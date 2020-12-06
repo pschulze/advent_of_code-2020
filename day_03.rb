@@ -23,7 +23,7 @@ result = [[1, 1], [3, 1], [5, 1], [7, 1], [1, 2]].map do |slope_info|
   puts "[#{horizontal_delta}, #{vertical_delta}] - #{trees_encountered}"
 
   trees_encountered
-end.inject(:*)
+end.reduce(:*)
 
 puts
 puts "Product of Trees Encountered: #{result}"
